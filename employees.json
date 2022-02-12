@@ -1,0 +1,85 @@
+[{
+  "_id": {
+    "$oid": "61a86fa0a876b13cf68ff7be"
+  },
+  "name": "Karthik K",
+  "position": "Associate Software Enginner ",
+  "salary": 240000,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61a9f70d2259d856f9cd6cb7"
+  },
+  "name": "Ragul",
+  "position": "Software Test Engineer",
+  "salary": "250000"
+},{
+  "_id": {
+    "$oid": "61a9f70d2259d856f9cd6cb8"
+  },
+  "name": "Gokul",
+  "position": "Network Engineer",
+  "salary": "240000"
+},{
+  "_id": {
+    "$oid": "61a9f70d2259d856f9cd6cb9"
+  },
+  "name": "Arun",
+  "position": "UI Designer",
+  "salary": "260000"
+},{
+  "_id": {
+    "$oid": "61a9f70d2259d856f9cd6cba"
+  },
+  "name": "Kishore",
+  "position": "Accounting",
+  "salary": "240000"
+},{
+  "_id": {
+    "$oid": "61aae1a2314d65b46236afaa"
+  },
+  "name": "Vikesh",
+  "position": "UI Designer",
+  "salary": 260000,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61aaef1a314d65b46236afb8"
+  },
+  "name": "Govarathan",
+  "position": "Developer",
+  "salary": 200000,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61aaf109314d65b46236afbc"
+  },
+  "name": "Jameel H",
+  "position": "Accounting",
+  "salary": 280000,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61adb26ab4eea1e38891d6a9"
+  },
+  "name": "Sandhiya",
+  "position": "Teacher",
+  "salary": 280000,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61adb817b4eea1e38891d6ac"
+  },
+  "name": "Pavithra",
+  "position": "Software Test Engineer",
+  "salary": 260000,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61bc27b278f2a957cc40b836"
+  },
+  "name": "Muthu",
+  "position": "Account",
+  "salary": 245000,
+  "__v": 0
+}]
