@@ -1,28 +1,19 @@
-# Stage 1: Compile and Build angular codebase
+# ./Dockerfile
 
-# Use official node image as the base image
-FROM node:latest as build
+FROM node:12-alpine as node-angular-cli
 
-# Set the working directory
-WORKDIR /usr/local/app
+LABEL authors="Preston Lamb"
 
-# Add the source code to app
-COPY ./ /usr/local/app/
+# Linux setup
+# I got this from another, deprecated Angular CLI image.
+# I trust that developer, so I continued to use this, but you
+# can leave it out if you want.
+RUN apk update \
+  && apk add --update alpine-sdk \
+  && apk del alpine-sdk \
+  && rm -rf /tmp/* /var/cache/apk/* *.tar.gz ~/.npm \
+  && npm cache verify \
+  && sed -i -e "s/bin\/ash/bin\/sh/" /etc/passwd
 
-# Install all the dependencies
-RUN npm install
-
-# Generate the build of the application
-RUN npm run build
-
-
-# Stage 2: Serve app with nginx server
-
-# Use official nginx image as the base image
-FROM nginx:latest
-
-# Copy the build output to replace the default nginx contents.
-COPY --from=build /usr/local/app/dist/sample-angular-app /usr/share/nginx/html
-
-# Expose port 80
-EXPOSE 80
+# Angular CLI
+RUN npm install -g @angular/cli@8
